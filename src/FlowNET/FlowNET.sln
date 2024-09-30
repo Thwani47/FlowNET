@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNET.App", "FlowNET.App\FlowNET.App.csproj", "{19DDB971-6345-425D-95EB-871700905337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNET.Core", "FlowNET.Core\FlowNET.Core.csproj", "{F509093F-0744-4C3C-AA99-0686B8767221}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19DDB971-6345-425D-95EB-871700905337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DDB971-6345-425D-95EB-871700905337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DDB971-6345-425D-95EB-871700905337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DDB971-6345-425D-95EB-871700905337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F509093F-0744-4C3C-AA99-0686B8767221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F509093F-0744-4C3C-AA99-0686B8767221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F509093F-0744-4C3C-AA99-0686B8767221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F509093F-0744-4C3C-AA99-0686B8767221}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
