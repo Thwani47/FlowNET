@@ -6,33 +6,37 @@ namespace FlowNET.Core.Builder;
 
 public class PipelineBuilder
 {
-    private readonly Pipeline _pipeline = new Pipeline();
+    private IPipelineSink _sink;
+    private IPipelineSource _source;
+    private IPipelineTrigger _trigger;
+    private readonly List<IPipelineProcessor> _processors = new();
+
     public PipelineBuilder AddTrigger(IPipelineTrigger trigger)
     {
-        _pipeline.Trigger = trigger;
+        _trigger = trigger;
         return this;
     }
 
     public PipelineBuilder AddSource(IPipelineSource source)
     {
-        _pipeline.Source = source;
+        _source = source;
         return this;
     }
-    
+
     public PipelineBuilder AddProcessor(IPipelineProcessor processor)
     {
-        _pipeline.Processors.Add(processor);
+        _processors.Add(processor);
         return this;
     }
 
     public PipelineBuilder AddSink(IPipelineSink sink)
     {
-        _pipeline.Sink = sink;
+        _sink = sink;
         return this;
     }
-    
+
     public Pipeline Build()
     {
-        return new Pipeline();
+        return new Pipeline(_trigger, _source, _processors, _sink);
     }
 }
